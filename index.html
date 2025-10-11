@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FixItZed | Reliable Fixers On Demand</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/img/logo-sm.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container nav__wrapper">
+        <a class="brand" href="#">
+          <img src="assets/img/logo-sm.png" width="70" alt="FixItZed logo" />
+        </a>
+        <button id="navToggle" class="nav__toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="navMenu" class="nav__menu">
+          <a href="#why">Why FixItZed</a>
+          <a href="#services">Services</a>
+          <a href="#app">Mobile App</a>
+          <a href="#testimonials">Reviews</a>
+          <a href="#contact" class="nav__cta">Become a Fixer</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__glow hero__glow--one"></div>
+        <div class="hero__glow hero__glow--two"></div>
+        <div class="hero__pattern"></div>
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="hero__eyebrow">On-demand home services, simplified</p>
+            <h1>
+              Book trusted fixers in seconds and track every job from one sleek app.
+            </h1>
+            <p class="hero__body">
+              FixItZed connects busy households with vetted electricians, plumbers,
+              cleaners and handymen. Transparent pricing, real-time updates and secure
+              payments keep your home projects stress-free.
+            </p>
+            <div class="hero__actions">
+              <a href="#app" class="btn btn--primary">Download the App</a>
+              <a href="#services" class="btn btn--ghost">Explore Services</a>
+            </div>
+            <ul class="hero__stats">
+              <li>
+                <span class="stat__icon">✅</span>
+                <span class="stat__value">2k+</span>
+                <span class="stat__label">Jobs Completed</span>
+              </li>
+              <li>
+                <span class="stat__icon">⭐</span>
+                <span class="stat__value">4.9<span class="stat__suffix">/5</span></span>
+                <span class="stat__label">Average Rating</span>
+              </li>
+              <li>
+                <span class="stat__icon">🕑</span>
+                <span class="stat__value">24/7</span>
+                <span class="stat__label">Concierge Support</span>
+              </li>
+            </ul>
+            <!-- <div class="hero__trusted">
+              <span class="hero__trusted-label">Trusted by teams at</span>
+              <div class="hero__trusted-logos">
+                <span>Protea Homes</span>
+                <span>Bridges Estates</span>
+                <span>Lusaka Suites</span>
+              </div>
+            </div> -->
+          </div>
+          <div class="hero__visual">
+            <div class="hero__phone">
+              <div class="phone__screen">
+                <div class="phone__header">
+                  <span class="phone__time">9:41</span>
+                  <span class="phone__signal"></span>
+                </div>
+                <div class="phone__hero-card">
+                  <p class="card__label">Quick picks for you</p>
+                  <div class="card__service">
+                    <span class="card__icon">🔧</span>
+                    <div>
+                      <p class="card__title">Light Installation</p>
+                      <p class="card__subtitle">Schedule within 2 hours</p>
+                    </div>
+                    <span class="card__chevron">›</span>
+                  </div>
+                  <div class="card__service">
+                    <span class="card__icon">💧</span>
+                    <div>
+                      <p class="card__title">Leak Fix</p>
+                      <p class="card__subtitle">Same-day arrival</p>
+                    </div>
+                    <span class="card__chevron">›</span>
+                  </div>
+                  <button class="card__cta">Book a service</button>
+                </div>
+                <div class="phone__screenshot">
+                  <img src="assets/img/hero-app.jpg" alt="FixItZed dashboard preview" />
+                </div>
+              </div>
+            </div>
+            <div class="hero__badge">
+              <span>Trusted by 800+ households in Lusaka</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="partners">
+        <div class="container partners__wrapper">
+          <p>Featured in</p>
+          <div class="partners__logos">
+            <span>Zambia Daily Mail</span>
+            <span>Techtrends</span>
+            <span>Lusaka Times</span>
+            <span>ZNBC</span>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="why" class="why">
+        <div class="container">
+          <h2>Why households choose FixItZed</h2>
+          <p class="section__intro">
+            Powerful booking tools, transparent pricing and local fixers who show up
+            prepared—every single time.
+          </p>
+          <div class="why__grid">
+            <article class="card">
+              <span class="card__pill">Reliable network</span>
+              <h3>Vetted professionals</h3>
+              <p>
+                Every fixer passes background checks, skill assessments and ongoing
+                customer reviews.
+              </p>
+            </article>
+            <article class="card">
+              <span class="card__pill">End-to-end tracking</span>
+              <h3>Live updates &amp; payments</h3>
+              <p>
+                Book a service, chat with fixers and pay securely from your phone.
+                Digital receipts and warranty tracking keep your records tidy.
+              </p>
+            </article>
+            <article class="card">
+              <span class="card__pill">Delightful experience</span>
+              <h3>Support that never sleeps</h3>
+              <p>
+                The FixItZed concierge monitors every job with proactive notifications
+                and 24/7 customer care for when you need a quick human answer.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="services">
+        <div class="container services__wrapper">
+          <div class="services__copy">
+            <h2>One platform for all your home maintenance</h2>
+            <p>
+              From urgent repairs to planned upgrades, FixItZed keeps you covered with
+              tailored packages and transparent quotes.
+            </p>
+            <ul class="services__list">
+              <li>
+                <span class="services__icon">⚡</span>
+                <div>
+                  <h3>Electrical &amp; Smart Home</h3>
+                  <p>Lighting, sockets, CCTV, smart gadgets and power backups.</p>
+                </div>
+              </li>
+              <li>
+                <span class="services__icon">💧</span>
+                <div>
+                  <h3>Plumbing &amp; Drain Care</h3>
+                  <p>Leak detection, drain unclogging, fittings and water heaters.</p>
+                </div>
+              </li>
+              <li>
+                <span class="services__icon">🧰</span>
+                <div>
+                  <h3>Renovation &amp; Maintenance</h3>
+                  <p>Painting, carpentry, appliance repair and deep cleaning.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="services__gallery">
+            <div class="gallery__card gallery__card--primary">
+              <p class="gallery__label">Top Rated Fixers</p>
+              <div class="gallery__fixer">
+                <img
+                  src="https://images.unsplash.com/photo-1523419409543-0c1df022bdd3?auto=format&fit=crop&w=200&q=80"
+                  alt="Fixer installing a light bulb"
+                />
+                <div>
+                  <p class="gallery__name">Cosam Malaika</p>
+                  <p class="gallery__tagline">Electrical Specialist • 5.0 ⭐</p>
+                </div>
+              </div>
+              <div class="gallery__chips">
+                <span>CCTV Installation</span>
+                <span>Drain Unclogging</span>
+                <span>Door Installation</span>
+              </div>
+            </div>
+            <div class="gallery__card gallery__card--secondary">
+              <p>“Booking a fixer now takes less than three taps and the work is spotless.”</p>
+              <span>— Nawa, Lusaka</span>
+            </div>
+            <div class="gallery__card gallery__card--tertiary">
+              <h3>98%</h3>
+              <p>jobs completed on schedule</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="app" class="app">
+        <div class="container app__grid">
+          <div class="app__preview">
+            <div class="app__screen">
+              <img src="assets/img/hero-app.jpg" alt="Customer using FixItZed app" />
+            </div>
+            <div class="app__card">
+              <div>
+                <h3>Loyalty rewards</h3>
+                <p>Earn points on every booking and unlock perks.</p>
+              </div>
+            </div>
+          </div>
+          <div class="app__details">
+            <h2>The FixItZed mobile experience</h2>
+            <p>
+              Stay in control with a dashboard that keeps every booking, fixer chat
+              and invoice at your fingertips.
+            </p>
+            <ul>
+              <li>Smart scheduling with reminders and real-time ETA tracking.</li>
+              <li>In-app wallet, loyalty rewards and saved addresses.</li>
+              <li>Rate fixers and build your trusted home crew.</li>
+            </ul>
+            <div class="store__buttons">
+              <a href="#" class="store store--apple" aria-label="Download on App Store">
+                <span class="store__icon"></span>
+                <span class="store__copy">
+                  <small>Download on the</small>
+                  <strong>App Store</strong>
+                </span>
+              </a>
+              <a href="#" class="store store--google" aria-label="Get it on Google Play">
+                <span class="store__icon">▶</span>
+                <span class="store__copy">
+                  <small>Get it on</small>
+                  <strong>Google Play</strong>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="testimonials">
+        <div class="container">
+          <h2>Homeowners love the FixItZed difference</h2>
+          <div class="testimonials__grid">
+            <figure>
+              <blockquote>
+                “The app shows me exactly when my fixer is arriving. The work quality has
+                been consistently excellent—no more endless follow ups.”
+              </blockquote>
+              <figcaption>
+                <strong>Mutinta</strong>
+                <span>Property Owner, Kabulonga</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                “I manage multiple rental units and FixItZed handles everything from
+                plumbing emergencies to painting. Billing is transparent and fast.”
+              </blockquote>
+              <figcaption>
+                <strong>George</strong>
+                <span>Real Estate Manager</span>
+              </figcaption>
+            </figure>
+            <figure>
+              <blockquote>
+                “Becoming a FixItZed fixer gave our team a steady stream of jobs and an
+                easy way to delight customers. The ratings help us grow faster.”
+              </blockquote>
+              <figcaption>
+                <strong>Thandi</strong>
+                <span>Fixer Partner</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="cta">
+        <div class="container cta__wrapper">
+          <div class="cta__copy">
+            <h2>Ready to upgrade your home service experience?</h2>
+            <p>
+              Join thousands of happy customers who rely on FixItZed. Whether you need a
+              quick repair, a thorough clean or a specialist installation, we’ve got you.
+            </p>
+          </div>
+          <form class="cta__form">
+            <div class="form__group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Banda" required />
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form__group">
+              <label for="message">Tell us how we can help</label>
+              <textarea id="message" name="message" rows="4" placeholder="Describe your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Request a callback</button>
+            <p class="form__hint">
+              Prefer a call? Reach us at
+              <a href="tel:+260971000000">+260&nbsp;97&nbsp;100&nbsp;0000</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__grid">
+        <div>
+          <a class="brand brand--footer" href="#">
+            <img src="assets/img/logo.png" alt="FixItZed logo" />
+          </a>
+          <p>
+            Bringing trusted fixers to Zambian homes with speed, transparency and a smile.
+            Built with ❤️ in Lusaka.
+          </p>
+        </div>
+        <div>
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#why">Why FixItZed</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#app">Mobile App</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>For Fixers</h4>
+          <ul>
+            <li><a href="/fixer/apply">Join the network</a></li>
+            <li><a href="#testimonials">Success stories</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stay in the loop</h4>
+          <form class="footer__form">
+            <label for="newsletter" class="sr-only">Email address</label>
+            <input id="newsletter" type="email" placeholder="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <div class="footer__social">
+            <a href="#" aria-label="FixItZed on Facebook"></a>
+            <a href="#" aria-label="FixItZed on Instagram"></a>
+            <a href="#" aria-label="FixItZed on Twitter"></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <small>
+          &copy; <span id="year"></span> FixItZed. All rights reserved.
+          <a href="privacy.html">Privacy Policy</a>
+          <span>·</span>
+          <a href="terms.html">Terms of Service &amp; Use</a>
+        </small>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
