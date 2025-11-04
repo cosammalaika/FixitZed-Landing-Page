@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160">
+  <defs>
+    <linearGradient id="avatar-bg" x1="20%" y1="0%" x2="85%" y2="100%">
+      <stop offset="0%" stop-color="#1f2b5a" />
+      <stop offset="55%" stop-color="#253b74" />
+      <stop offset="100%" stop-color="#1a2347" />
+    </linearGradient>
+    <linearGradient id="avatar-shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8a3d" />
+      <stop offset="100%" stop-color="#f1592a" />
+    </linearGradient>
+    <linearGradient id="avatar-highlight" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#ffe0c8" />
+      <stop offset="100%" stop-color="#f3b896" />
+    </linearGradient>
+    <clipPath id="avatar-clip">
+      <rect width="160" height="160" rx="48" />
+    </clipPath>
+  </defs>
+  <g clip-path="url(#avatar-clip)">
+    <rect width="160" height="160" fill="url(#avatar-bg)" />
+    <circle cx="120" cy="40" r="48" fill="rgba(255,255,255,0.05)" />
+    <circle cx="40" cy="28" r="32" fill="rgba(255,255,255,0.08)" />
+    <circle cx="80" cy="70" r="42" fill="url(#avatar-highlight)" />
+    <path
+      d="M52 154c-3.4-24.6 11.6-44 28-44s31.4 19.4 28 44H52Z"
+      fill="url(#avatar-shirt)"
+    />
+    <path
+      d="M80 118c-19.2 0-43.4 10.6-52 30.6V176h104v-27.4C123.4 128.6 99.2 118 80 118Z"
+      fill="rgba(15, 23, 42, 0.25)"
+    />
+    <path
+      d="M104 77c0-18.2-10.8-33-24-33S56 58.8 56 77c0 12.4 6.3 23.8 15.6 28a19 19 0 0 0 16.8 0C97.7 100.8 104 89.4 104 77Z"
+      fill="rgba(24, 32, 60, 0.9)"
+    />
+    <path
+      d="M104 72.3C100.5 63.6 94.7 58 86 58c-8.7 0-14.5 5.6-18 14.3"
+      fill="none"
+      stroke="rgba(255, 255, 255, 0.12)"
+      stroke-width="5"
+      stroke-linecap="round"
+    />
+    <circle cx="64" cy="85" r="5" fill="rgba(15, 23, 42, 0.75)" />
+    <circle cx="96" cy="85" r="5" fill="rgba(15, 23, 42, 0.75)" />
+    <path
+      d="M72 104c10 6 20 6 30 0"
+      fill="none"
+      stroke="rgba(15, 23, 42, 0.5)"
+      stroke-width="5"
+      stroke-linecap="round"
+    />
+    <path
+      d="M80 12c-24 0-38 18.8-38 40.5 0 8.4 2.1 13.8 4.7 18.5 1.4 2.5 4.8 2.6 7.2 1.1A33 33 0 0 1 80 60a33 33 0 0 1 26 12.1c2.4 1.5 5.8 1.4 7.2-1.1 2.6-4.7 4.7-10.1 4.7-18.5C118 30.8 104 12 80 12Z"
+      fill="rgba(24, 32, 60, 0.95)"
+    />
+    <path
+      d="M110.5 46c-3.5-16.7-16-26-30.5-26S53 29.3 49.5 46"
+      fill="none"
+      stroke="rgba(255, 255, 255, 0.08)"
+      stroke-width="6"
+      stroke-linecap="round"
+    />
+    <path
+      d="m88 134 16 26"
+      fill="none"
+      stroke="rgba(0,0,0,0.18)"
+      stroke-width="4"
+      stroke-linecap="round"
+    />
+    <path
+      d="m72 134-16 26"
+      fill="none"
+      stroke="rgba(0,0,0,0.18)"
+      stroke-width="4"
+      stroke-linecap="round"
+    />
+  </g>
+</svg>
