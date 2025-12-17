@@ -198,7 +198,7 @@ img {
 }
 
 .brand img {
-  width: 76px;
+  width: 120px;
   height: 76px;
   object-fit: contain;
 }
@@ -1274,8 +1274,8 @@ textarea:focus {
 }
 
 .brand--footer img {
-  width: 64px;
-  height: 64px;
+  width: 120px;
+  height: 40px;
   object-fit: contain;
 }
 
@@ -1351,6 +1351,13 @@ textarea:focus {
   background: rgba(255, 255, 255, 0.12);
   color: #fff;
   transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.footer__social svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  fill: currentColor;
 }
 
 .footer__social a:hover {

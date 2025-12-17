@@ -80,9 +80,7 @@ if (testimonialCarousel) {
     '(prefers-reduced-motion: reduce)',
   ).matches;
   let autoplayTimer;
-  let slideWidth = viewport
-    ? viewport.getBoundingClientRect().width
-    : slides[0]?.getBoundingClientRect().width || 0;
+  let slideWidth = 0;
 
   if (slides.length <= 1 || !track) {
     slides.forEach((slide) => slide.classList.add('is-active'));
@@ -93,9 +91,13 @@ if (testimonialCarousel) {
   }
 
   const updateDimensions = () => {
-    const newWidth = viewport
-      ? viewport.getBoundingClientRect().width
-      : slides[0]?.getBoundingClientRect().width || 0;
+    const viewportWidth = viewport?.getBoundingClientRect().width || 0;
+    const trackWidth = track?.getBoundingClientRect().width || 0;
+    const fallbackWidth =
+      slides[0]?.getBoundingClientRect().width ||
+      testimonialCarousel.getBoundingClientRect().width ||
+      0;
+    const newWidth = viewportWidth || trackWidth || fallbackWidth;
 
     if (!newWidth) {
       requestAnimationFrame(updateDimensions);
@@ -103,6 +105,9 @@ if (testimonialCarousel) {
     }
 
     slideWidth = newWidth;
+    slides.forEach((slide) => {
+      slide.style.width = `${slideWidth}px`;
+    });
     track.style.transform = `translate3d(-${activeIndex * slideWidth}px, 0, 0)`;
   };
 
@@ -170,9 +175,7 @@ if (testimonialCarousel) {
     }
   });
 
-  window.addEventListener('resize', () => {
-    updateDimensions();
-  });
+  window.addEventListener('resize', updateDimensions);
 
   document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
@@ -184,6 +187,7 @@ if (testimonialCarousel) {
 
   requestAnimationFrame(updateDimensions);
   window.addEventListener('load', updateDimensions);
+  window.addEventListener('DOMContentLoaded', updateDimensions);
   setActiveState(activeIndex);
   startAutoplay();
 }
