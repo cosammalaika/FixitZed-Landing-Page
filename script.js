@@ -108,7 +108,9 @@ if (testimonialCarousel) {
     slides.forEach((slide) => {
       slide.style.width = `${slideWidth}px`;
     });
-    track.style.transform = `translate3d(-${activeIndex * slideWidth}px, 0, 0)`;
+    if (viewport) {
+      viewport.scrollLeft = activeIndex * slideWidth;
+    }
   };
 
   const setActiveState = (index) => {
@@ -122,14 +124,19 @@ if (testimonialCarousel) {
       dot.setAttribute('aria-pressed', dotIndex === index ? 'true' : 'false');
       dot.setAttribute('aria-current', dotIndex === index ? 'true' : 'false');
     });
+  };
 
-    track.style.transform = `translate3d(-${index * slideWidth}px, 0, 0)`;
+  const scrollToIndex = (index) => {
+    if (!viewport) return;
+    const behavior = prefersReducedMotion ? 'auto' : 'smooth';
+    viewport.scrollTo({ left: index * slideWidth, behavior });
   };
 
   const goToSlide = (index) => {
     const total = slides.length;
     activeIndex = (index + total) % total;
     setActiveState(activeIndex);
+    scrollToIndex(activeIndex);
   };
 
   const startAutoplay = () => {
@@ -167,6 +174,14 @@ if (testimonialCarousel) {
     passive: true,
   });
   testimonialCarousel.addEventListener('touchend', startAutoplay);
+  viewport?.addEventListener('scroll', () => {
+    if (!slideWidth) return;
+    const nextIndex = Math.round(viewport.scrollLeft / slideWidth);
+    if (nextIndex !== activeIndex) {
+      activeIndex = nextIndex;
+      setActiveState(activeIndex);
+    }
+  });
   testimonialCarousel.addEventListener('focusin', stopAutoplay);
   testimonialCarousel.addEventListener('focusout', (event) => {
     const nextFocusedElement = event.relatedTarget;
